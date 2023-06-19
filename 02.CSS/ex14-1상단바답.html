@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 움직이고 싶은 것!! -> Item, 그것의 부모 -> Container!!! */
+
+
+        /* 
+            Step1) container 아래에 있는 box1, box2, box3을 한줄로 정렬
+            Step2) 각각의 Box 안에 있는 데이터들을 정답에 맞게 정렬 
+            ex) 로고는 Box1의 한가운데. .....
+            Step3) 디자인, hover처리 
+        */
+        .container{
+            background-color: whitesmoke;
+            height: 80px;
+            border-radius: 10px;
+            /* step 1 */
+            display: flex;
+        }
+
+        .container>div{
+            /* 임시 작성 */
+            /* border: 1px solid black; */
+
+            /* step 2- Container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* step1 - Item */
+        .box1, .box3{
+            flex-basis: 15%;
+        }
+
+        .box2{
+            flex-basis: 70%;
+        }
+
+        .box2>a,.box3>a{
+            color: black;
+            font-size: 16px;
+            /* 폰트 없어서..적용 안됨...ㅎㅎ */
+            font-family: 'g마켓 산스';
+
+            padding: 10px;
+            /* margin: 10px; */
+            border-radius: 20px;
+        }
+        
+        .box2>a:hover,.box3>a:hover{
+            background-color: black;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>SMHRD</h1>
+        </div>
+        <div class="box2">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div class="box3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>

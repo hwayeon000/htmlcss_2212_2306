@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 이미지를 가져오자 <img>
+    - 필수속성 : src ( source )
+    - src에는 경로를 작성
+    -->
+
+    <!-- 1. 상대경로 -->
+    <!-- case 1) ./ : 현재를 기준으로 바로 접근 -->
+    <img src="./img/pic.jpeg" alt="이미지 표시할 수 없을 때 출력하는 이미지 설명" title="놀란 고영:마우스 올렸을때 뜨는" width="300px">
+    <!-- case 2) ../ : 상위를 기준으로 접근 -->
+    <img src="../document/1.png" width="300px" alt="ggg">
+    <!-- 
+        - ../ : 여러번 상위로 올라가야 할 때는 ../ 여러번 반복
+        - / : 가장 최상위로 올라 갈 때 ( 파일을 구성하고 있는 폴더 )
+            ex) ../img/1.png
+                /htmlcss/img/1.png
+        - 현재를 기준으로 접근하는 ./는 생략이 가능
+     -->
+
+    <!-- 2. 절대경로 -->
+    <img src="https://blog.kakaocdn.net/dn/cDAguE/btqSgNhMws1/Ym231sNWbZJ2q8YdQuoOY1/img.jpg" alt="침울한 고영" width="300px">
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+h3{
+    color: orangered;
+}
+h1{
+    /* 강제함.. 사용XX, 다만 정말정말 피치 못할 때.. */
+    color: yellowgreen !important;
+}

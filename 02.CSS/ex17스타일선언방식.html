@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 내부 방식 : F12에서 주석까지 모두 보임, 보안 취약*/
+        h2{
+            color :aqua;
+        }
+        @font-face {
+            font-family: 'Ansungtangmyun-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+        *{
+            font-family: 'Ansungtangmyun-Bold';
+        }
+    </style>
+
+    <!-- ❌❌❌ 외부 방식 ❌❌❌
+    link 태그 사용해서 연결
+    - rel : 무슨관계
+    - href : 연결 파일 위치 -->
+    <link rel="stylesheet" href="./ex17외부.css">
+</head>
+<body>
+    <!-- 인라인 방식 : 보안 취약 -->
+    <!-- 우선순위가 높음, 긴급 시 사용(사용 지양..., 이슈가 없는 한 외부방식..!!!) -->
+    <h1 style="color: blueviolet;">환상의 나라로 오세요~(o=^•ェ•)o ┏━┓</h1>
+
+    <h2>내부방식용입니다</h2>
+
+    <h3>외부방식용입니다아~.</h3>
+
+
+</body>
+</html>

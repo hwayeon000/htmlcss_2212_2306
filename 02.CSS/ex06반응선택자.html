@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 반응 선택자
+        (1) 요소 위에 마우스를 올렸을 때 : hover
+        선택자:hover {}
+        */
+        h1:hover{
+            color: rgb(13, 236, 180);
+        }
+
+        /* (2) 요소를 클릭했을 때 : active */
+        h1:active{
+            color: rgb(180, 16, 221);
+        }
+
+        .mat:hover{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>아이유_아이와 나의 바다</h1>
+    
+    <!-- 
+        질문 말고 답에만 반응 선택자
+        Point1) 질문은 반응하면 안됨!!
+        마우스 올린 채로 캡쳐
+        윈도우 + shift + s
+    -->
+    <p>ㅂㅎㅇ의 맛집은?</p>
+    <p class="mat">집밥 최고..</p>
+    <p class="mat">엄....</p>
+</html>

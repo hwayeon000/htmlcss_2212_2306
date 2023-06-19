@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            /* 내가 설정한 너비 */
+            width: 500px;
+            /* 경계선 */
+            border: 20px solid gray;
+            /* 안쪽 여백 */
+            padding: 20px;
+            
+        }
+
+        .cb{
+            box-sizing: content-box;
+        }
+        /* Box-sizing */
+        /* (1) content-box 
+        내가 설정한 너비 = 컨텐츠의 너비
+        컨텐츠의 영역만을 크기로 삼는 속성
+        패딩, 보더 값이 들어가면 들어간 만 큼 크기가 커짐
+        왜? 컨텐츠만 신경쓰니까! 
+        => default 값 */
+
+
+        .bb{
+            box-sizing: border-box;
+        }
+        /* (2) border-box
+        내가 설정한 너비 = 컨텐츠 + 패딩 + 보더 까지의 너비
+        border 안쪽까지를 크기로 삼는 속성
+        패딩, 보다값이 들어가면 들어간 만 큼 컨텐츠는 줄고 전체 크기는 그대로
+        왜? 컨텐츠 + 패딩 + 보더 값까지 신경쓰니까
+        
+        Q. 얘 언제 써요?
+        A. 패딩이나 보더를 넣더라고 전체 크기를 유지하고 싶을 때!! */
+    </style>
+
+</head>
+<body>
+    <div class="cb">
+        <p>content-box</p>
+    </div>
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+
+
+
+
+</body>
+</html>

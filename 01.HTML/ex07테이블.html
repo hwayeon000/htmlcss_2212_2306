@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Table</h2>
+    <!-- 테이블을 생성하자! -->
+    <hr color="#C6D0EB" size="5px" width="150px" align="left">
+    <!-- 1. 테이블을 만들겠다고 선언하는 공간 <table>
+        앞으로 표에 대한 정보는 모두 table 안에 작성 -->
+    <table border="1px solid black">
+
+        <!-- 표의 제목 -->
+        <caption>메뉴판</caption>
+        <!-- 2. 테이블의 한 행(줄)을 생성하는 방법
+            table row => <tr> -->
+
+            <!-- 3-2. 표의 헤더부분을 작성할 때
+                글자가 굵어지고 가운데 정렬
+                보통 한 테이블의 최상단 / 설명란 -->
+            <tr>
+                <th>메뉴</th>
+                <th>가격</th>
+            </tr>
+
+            <tr>
+            <!-- 3. 테이블의 한 열(칸)을 생성하는 공간
+                rable data => <td> -->
+            <td>장칼국수</td>
+            <!-- ** 병합 기능
+                (1) 위, 아래를 병합 => rowspan
+                (2) 좌, 우를 병합 => colspan
+                
+                사용방법 -> rowspan="2"
+                    => 두 칸 만큼 위 아래를 병합하겠다. -->
+            
+            <td rowspan="2">7000원</td>
+        </tr>
+        <tr>
+            <td>참치김밥</td>
+            <!-- <td>3000원</td> -->
+        </tr>
+        <tr>
+            <td>피자</td>
+            <td>7000원</td>
+        </tr>
+        <tr>
+            <td colspan="2">떡국</td>
+            <!-- <td>5000원</td> -->
+        </tr>
+    </table>
+
+
+
+
+</body>
+</html>

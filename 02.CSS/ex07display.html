@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, span{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 1. display : block
+            무조건 가로로 한줄의 영역을 차지하는 속성
+            width, height 값 설정 가능 
+                종류 : div태그, p태그 .. 등 => 기본 값 block */
+        
+        /* 2. display : inline
+            내가 담은 컨텐츠까지만 크기로 삼는 속성
+            width, height 값 설정 불가능
+                종류 : span태드 a태그 .. 등 => 기본 값 inline */
+
+        p{
+            background-color: pink;
+            display: inline;
+        }
+
+        span{
+            background-color: aquamarine;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- div 태그 : 공간 분할 태그로, 경계를 분할하거나 
+                    영역을 나눌 때 사용하는 태그 -->
+    <div></div>
+
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+</body>
+</html>

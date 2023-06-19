@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            /* body태그의 기본 마진 값 : 8px => defualt 값 */
+            margin: 0px;
+        }
+
+        #box{
+            background-color: rgb(113, 228, 199);
+            width: 100px;
+            height: 100px;
+
+            /* margin : 경계선을 기준으로 바깥쪽 여백 */
+            margin: 50px;
+            /* margin-left: 50px; */
+
+            /* border-radius : 경계선을 둥글게 만들어 주는 속성 
+                => 그대로 사용하면 4개의 각을 전부 둥글게
+            
+            특정 각만 ?
+                => border - 위/아래 - 좌/우 - radius
+            
+                ex) 나는 위쪽 왼쪽 을 둥글게 할래!
+                border-top-left-radius */
+
+            /* 보통 20px정도 꺾음 */
+            /* border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px; */
+
+            /* 원 만들기 */
+            border-radius: 50px;
+        }
+
+        #box0{
+            background-color: rgb(129, 174, 233);
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+        /* 마진 중첩 현상 : 상단의 바텀마진 20px, 밑의 탑마진이 20px 인 경우
+        20px + 20px = 40px가 아닌 20px가 됨 */
+
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: rgb(113, 228, 199);
+            /* width: 100px; */
+            /* height: 100px; */
+        }
+        #box2{
+            background-color: rgb(127, 230, 144);
+            /* width: 100px; */
+            /* height: 100px; */
+            margin-left: 100px;
+        }
+        #box3{
+            background-color: rgb(189, 139, 236);
+            /* width: 100px; */
+            /* height: 100px; */
+            margin-left: 200px;
+        }
+        #box4{
+            background-color: rgb(240, 182, 218);
+            /* width: 100px; */
+            /* height: 100px; */
+            margin-left: 300px;
+        }
+
+        #box5{
+            background-color: rgb(240, 182, 218);
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>마진 연습하기</h1>
+    <div id="box"></div>
+    <div id="box0"></div>
+
+    <h2>마진 실습!!</h2>
+    <div id="box1">컨텐츠1</div>
+    <div id="box2">컨텐츠2</div>
+    <div id="box3">컨텐츠3</div>
+    <div id="box4">컨텐츠4</div>
+    <br>
+
+
+    <h2>radius</h2>
+    <div id="box5"></div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

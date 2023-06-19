@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .answer{
+            display: none;
+        }
+        /* 
+        1.질문 위에 마우스를 올리면  => hover
+        2. 질문 옆에 있는           => + 
+        3. 답이 보이게 해줄 것      => display:inline  */
+        .question:hover+.answer{
+            display: inline;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h3>~ Quiz ~</h3>
+    <span class="question">Q. 다다음 시간 신청곡 받습니다.</span>
+    <span class="answer">A. 비비 - PADO</span>
+
+    <!-- 
+    Q. 주말에 뭐하셨나요?
+    A. 놀았음다.. 
+
+    단 스타일 태그 손대지 않고 구현하기!-->
+    <br>
+    <span class="question">Q. 주말에 뭐했음까?</span>
+    <span class="answer">A. 놀았음당..ㅎ</span>
+
+
+</body>
+</html>
